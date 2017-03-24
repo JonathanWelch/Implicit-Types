@@ -24,8 +24,9 @@ var j = 17;
 ```
 
 ### string example
-
-    var firstName = "Fred";
+```c#
+var firstName = "Fred";
+```
 
 ### List example
 
