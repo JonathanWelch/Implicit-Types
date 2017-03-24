@@ -19,7 +19,9 @@ You can not initialize multiple variables in the same statement
 
 ###int example
 
-```var j = 17;```
+```c#
+var j = 17;
+```
 
 ###string example
 
