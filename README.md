@@ -6,7 +6,7 @@ You can also use the **var** keyword in **for**, **foreach** and **using** state
 
 I feel that using **var** keyword in my code makes it quicker to write and easier to read.
 
-##Restrictions
+## Restrictions
 
 You can not implicitly type class members (i.e. Fields).
 You can only use **var** when declaring and initializing variable in the same statement
@@ -15,27 +15,27 @@ You can not initialize with a method group
 You can not initialize with an anonymous function
 You can not initialize multiple variables in the same statement
 
-##Local variables examples
+## Local variables examples
 
-###int example
+### int example
 
 ```c#
 var j = 17;
 ```
 
-###string example
+### string example
 
     var firstName = "Fred";
 
-###List example
+### List example
 
 var employees = new List { "Fred Blogs", "James Kane", "Jon Jones"};
 
-###anonymous type example
+### anonymous type example
 
 var employee = new { Name = "Fred Bloggs", Age = 23 };
 
-###IEnumerable example
+### IEnumerable example
 
 This example is for the type IEnumerable
 
@@ -68,10 +68,10 @@ var customersNamedFred = from c in customers
                          where c.FirstName == "Fred"
                          select c;
 
-##for and foreach initialization statement examples
+## for and foreach initialization statement examples
 
 
-###for initialization statement example
+### for initialization statement example
 
 
 for (var i = 0; i < 100; i++)
@@ -79,7 +79,7 @@ for (var i = 0; i < 100; i++)
    Console.WriteLine(i);
 }
 
-###foreach initialization statement example
+### foreach initialization statement example
 
 
 var customers = new List { "Fred Blogs", "James Kane", "Jon Jones"};
@@ -88,7 +88,7 @@ foreach (var customer in customers)
    Console.WriteLine(customer);
 }
 
-###using statement example
+### using statement example
 
 
 using (var httpClient = new HttpClient())
@@ -96,7 +96,7 @@ using (var httpClient = new HttpClient())
    var response = httpClient.GetStringAsync("http://www.google.com").Result;               
 }
 
-##Useful links
+## Useful links
 
 
 Implicitly Typed Local Variables (C# Programming Guide)
