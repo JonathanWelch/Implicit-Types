@@ -29,24 +29,29 @@ var firstName = "Fred";
 ```
 
 ### List example
-
+```c#
 var employees = new List { "Fred Blogs", "James Kane", "Jon Jones"};
+```
 
 ### anonymous type example
-
+```c#
 var employee = new { Name = "Fred Bloggs", Age = 23 };
+```
 
 ### IEnumerable example
 
 This example is for the type IEnumerable
 
+```c#
 var customers = new CustomerQuery().FindAll();
 
 var customersNamedFred = from c in customers
-                         where c.FirstName == "Fred"
+                         where c.FirstName == ""Fred""
                          select c;
-This example is for the type IEnumerable
+```
 
+This example is for the type IEnumerable
+```c#
 var customers = new List
 {
    new { FirstName = "Fred", LastName = "Bloggs" },
@@ -61,13 +66,16 @@ This example is for the type IEnumerable<‘a> (anonymous type)
 var customers = Enumerable.Empty)
                 .Select(r => new { FirstName = "Fred", LastName = "Bloggs" }) 
                 .ToList();
+```
 
 //Example of how to add a customer to the list
+```c#
 customers.Add(new { FirstName = "Jacon", LastName = "Creaker"});
 
 var customersNamedFred = from c in customers
                          where c.FirstName == "Fred"
                          select c;
+```
 
 ## for and foreach initialization statement examples
 
