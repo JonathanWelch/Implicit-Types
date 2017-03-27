@@ -4,7 +4,7 @@ You can also use the **var** keyword in **for**, **foreach** and **using** state
 
 ## Benefits
 
-I feel that using **var** keyword in my code makes it quicker to write and easier to read.
+I feel that using **var** keyword in my code makes it quicker to write and easier to read.  It is certainly my preference when the type is obvious.
 
 ## Restrictions
 
