@@ -2,6 +2,8 @@
 Although there is nothing wrong with giving a local variable an explicit type, such as **int** or **string**,  I more than often use the **var** keyword to implicitly type a local variable.  When you do this the compiler provides the type at compile time.  It does this by inferring the type of the variable from the expression on the right side of the initialization statement.
 You can also use the **var** keyword in **for**, **foreach** and **using** statements.
 
+In this Repository you can find code examples of Implicit Types in use. 
+
 ## Benefits
 
 I feel that using **var** keyword in my code makes it quicker to write and easier to read.  It is certainly my preference when the type is obvious.
