@@ -61,8 +61,11 @@ var customers = new List
 var customersNamedFred = from c in customers
                          where c.FirstName == "Fred"
                          select c;
+```
+
 This example is for the type IEnumerable<‘a> (anonymous type)
 
+```c#
 var customers = Enumerable.Empty)
                 .Select(r => new { FirstName = "Fred", LastName = "Bloggs" }) 
                 .ToList();
@@ -81,30 +84,32 @@ var customersNamedFred = from c in customers
 
 ### for initialization statement example
 
-
+```c#
 for (var i = 0; i < 100; i++)
 {
    Console.WriteLine(i);
 }
+```
 
 ### foreach initialization statement example
 
-
+```c#
 var customers = new List { "Fred Blogs", "James Kane", "Jon Jones"};
 foreach (var customer in customers)
 {
    Console.WriteLine(customer);
 }
+```
 
 ### using statement example
 
-
+```c#
 using (var httpClient = new HttpClient())
 {
    var response = httpClient.GetStringAsync("http://www.google.com").Result;               
 }
+```
 
 ## Useful links
 
-
-Implicitly Typed Local Variables (C# Programming Guide)
+[Implicitly Typed Local Variables (C# Programming Guide)](https://msdn.microsoft.com/en-us/library/bb384061.aspx)
