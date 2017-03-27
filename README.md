@@ -66,10 +66,9 @@ This example is for the type IEnumerable<‘a> (anonymous type)
 var customers = Enumerable.Empty)
                 .Select(r => new { FirstName = "Fred", LastName = "Bloggs" }) 
                 .ToList();
-```
 
 //Example of how to add a customer to the list
-```c#
+
 customers.Add(new { FirstName = "Jacon", LastName = "Creaker"});
 
 var customersNamedFred = from c in customers
