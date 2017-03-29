@@ -32,7 +32,7 @@ var firstName = "Fred";
 
 ### List example
 ```c#
-var employees = new List { "Fred Blogs", "James Kane", "Jon Jones"};
+var employees = new List<string> { "Fred Blogs", "James Kane", "Jon Jones"};
 ```
 
 ### anonymous type example
@@ -54,10 +54,10 @@ var customersNamedFred = from c in customers
 
 This example is for the type IEnumerable
 ```c#
-var customers = new List
+var customers = new List<Customer>
 {
-   new { FirstName = "Fred", LastName = "Bloggs" },
-   new { FirstName = "Jacon", LastName = "Creaker" }
+   new Customer { FirstName = "Fred", LastName = "Bloggs" },
+   new Customer { FirstName = "Jacon", LastName = "Creaker" }
 };
 
 var customersNamedFred = from c in customers
@@ -68,17 +68,19 @@ var customersNamedFred = from c in customers
 This example is for the type IEnumerable<‘a> (anonymous type)
 
 ```c#
-var customers = Enumerable.Empty)
-                .Select(r => new { FirstName = "Fred", LastName = "Bloggs" }) 
-                .ToList();
+ var customerTuple = new List<Tuple<string, string>>
+ {
+     new Tuple<string, string>("Fred", "Bloggs"),
+     new Tuple<string, string>("Jacon", "Creaker")
+ };
 
-//Example of how to add a customer to the list
+ var customers = customerTuple.Select(t => new { 
+                              FirstName = t.Item1, 
+                              LastName = t.Item2 }).ToList();
 
-customers.Add(new { FirstName = "Jacon", LastName = "Creaker"});
-
-var customersNamedFred = from c in customers
-                         where c.FirstName == "Fred"
-                         select c;
+ var customersNamedFred = from c in customers
+                          where c.FirstName == "Fred"
+                          select c;
 ```
 
 ## for and foreach initialization statement examples
