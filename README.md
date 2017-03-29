@@ -2,7 +2,9 @@
 Although there is nothing wrong with giving a local variable an explicit type, such as **int** or **string**,  I more than often use the **var** keyword to implicitly type a local variable.  When you do this the compiler provides the type at compile time.  It does this by inferring the type of the variable from the expression on the right side of the initialization statement.
 You can also use the **var** keyword in **for**, **foreach** and **using** statements.
 
-In this Repository you can find code examples of Implicit Types in use. 
+## Visual Studio Solution with Examples
+In this Repository you can find code examples of Implicit Types in use.  The examples were written as NUnit tests to showcase that the expected type is created.
+
 
 ## Benefits
 
@@ -18,6 +20,8 @@ You can not initialize with an anonymous function
 You can not initialize multiple variables in the same statement
 
 ## Local variables examples
+
+Listed below are the examples that can be found in the Visual Studio Solution.
 
 ### int example
 

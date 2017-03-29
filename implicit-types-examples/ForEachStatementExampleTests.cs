@@ -14,6 +14,6 @@ namespace implicit_types
             {
                 Assert.That(customer.GetType(), Is.EqualTo(typeof(string)));
             }
-        }
+        }                
     }
 }
