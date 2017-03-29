@@ -99,12 +99,14 @@ for (var i = 0; i < 100; i++)
 ### foreach initialization statement example
 
 ```c#
-var customers = new List { "Fred Blogs", "James Kane", "Jon Jones"};
+var customers = new List<string> { "Fred Blogs", "James Kane", "Jon Jones"};
 foreach (var customer in customers)
 {
    Console.WriteLine(customer);
 }
 ```
+
+## using statement example
 
 ### using statement example
 
